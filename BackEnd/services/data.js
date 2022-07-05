@@ -3,7 +3,7 @@ const pathFileStocks = "../data/stocksList.txt";
 const dataJson = require("../data/stockListJson.json");
 
 const API_KEY = "pk_eafa88f7d9f24ee2b8f0e179f2a9493a";
-let rutaBusqueda = "https://cloud.iexapis.com/stable/stock/ts/quote?token=";
+let rutaBusqueda = "https://cloud.iexapis.com/stable/stock/";
 //const fetch = require("node-fetch");
 
 module.exports = {

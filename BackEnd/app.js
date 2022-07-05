@@ -39,10 +39,11 @@ const requestListener = function (req, res) {
 
     case "/stocks/agregar/:symbol":
       res.writeHead(200);
-      let url = new URL(req);
-      symbol = url.searchParams("symbol");
-      //let symbol = req.url.params.get("symbol");
-      services.agregarStock("sm");
+      // const parametros = window.location.search;
+      // const urlParams = new URLSearchParams(parametros);
+      // let symbol = urlParams.get("symbol");
+      // let symbol = req.params.symbol;
+      //services.agregarStock("sm");
       res.end(`{"message":"${symbol}"}`);
       break;
 
